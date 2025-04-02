@@ -5,26 +5,32 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/about");
+    navigate("/User");
   };
 
   return (
-    <div className="text-center">
-      <h1 className="text-3xl font-bold mb-4">Welcome to Our App</h1>
-      <button
+    <div className="  justify-items-center  p-10 mr-2  ">
+      <h1 className="text-3xl font-bold mb-4 ">
+        Generation Thailand<br /> React-Assessment
+      </h1>
+
+      <section className="flex gap-x-40">
+      <button 
         onClick={handleNavigate}
-        className="px-4 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-700 transition"
+        className="px-4 py-2  bg-white text-black rounded-md hover:bg-teal-700 transition font-bold shadow-2xl   "
       >
-        Go to About
+        User Home Sector
       </button>
-      <br />
-      <br />
+
+
       <Link
-        to="/contact"
-        className="text-teal-600 underline hover:text-teal-800"
+        to="/Admin"
+        className="px-4 py-2  bg-white text-black rounded-md hover:bg-teal-700 transition font-bold shadow-2xl"
       >
-        Go to Contact
+        Admin Home Sector
       </Link>
+      </section>
+
     </div>
   );
 };

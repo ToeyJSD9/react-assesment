@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+const mockEmployees = [
+  {
+    id: 0,
+    name: "mock",
+    lastname: 'mocklastname',
+    position: "Manager"
+  },
+  {
+    id: 1,
+    name: "employee 1",
+    lastname: "em",
+    position: "Engineer"
+  },
+  {
+    id: 2,
+    name: "employee 2",
+    lastname: "lord",
+    position: "Designer"
+  },
+]
 
 const Layout = () => {
+  const [users,setUsers] =useState(mockEmployees)
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      <nav className="bg-teal-500 text-white p-4 shadow-md">
-        <ul className="flex gap-4 justify-center">
+      <nav className=" text-black p-4 shadow-md">
+        <ul className="flex justify-end gap-8">
           <li>
             <Link to="/" className="hover:text-yellow-400">
               Home
@@ -13,23 +34,23 @@ const Layout = () => {
           </li>
           <li>
             <Link to="/about" className="hover:text-yellow-400">
-              About
+              Owner
             </Link>
           </li>
           <li>
             <Link to="/contact" className="hover:text-yellow-400">
-              Contact
+              
             </Link>
           </li>
           <li>
             <Link to="/products" className="hover:text-yellow-400">
-              Products
+              
             </Link>
           </li>
         </ul>
       </nav>
       <div className="p-6 max-w-4xl mx-auto w-full">
-        <Outlet />
+        <Outlet context={{users,setUsers}}/>
       </div>
     </div>
   );

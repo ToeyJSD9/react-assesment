@@ -7,7 +7,7 @@ const User = () => {
     navigate("/Admin");
   };
   return (
-    <div className="  justify-items-center  p-10 mr-2  ">
+    <div className="  justify-items-center  p-10 mr-2 ">
     <h1 className="text-3xl font-bold mb-4 ">
       Generation Thailand<br /> Home - User Sector
     </h1>
@@ -28,6 +28,8 @@ const User = () => {
       Admin Home Sector
     </Link>
     </section>
+
+
 
   </div>
   );

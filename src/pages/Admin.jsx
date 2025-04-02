@@ -30,21 +30,7 @@ const Admin = () => {
         </Link>
       </section>
 
-      {/* <section className="flex gap-x-20 ">
-        <P>Create User Here</P>
-        <textarea className="bg-white border border-gray-300 ">
-
-        </textarea>
-        <div>
-
-        </div>
-
-        <div>
-
-        </div>
-
-
-      </section> */}
+     
     </div>
   );
 };

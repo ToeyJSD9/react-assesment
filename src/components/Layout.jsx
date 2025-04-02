@@ -33,7 +33,7 @@ const Layout = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-yellow-400">
+            <Link to="/Owner" className="hover:text-yellow-400">
               Owner
             </Link>
           </li>

@@ -5,7 +5,7 @@ import User from "./pages/User";
 
 
 import Admin from "./pages/Admin";
-import Owner from "./pages/owner";
+import Owner from "./pages/Owner";
 
 const router = createBrowserRouter([
   {
@@ -18,9 +18,9 @@ const router = createBrowserRouter([
     ),
     children: [
       { path: "/", element: <Home /> },
-      { path: "User", element: <User /> },
-      { path: "Admin", element: <Admin /> },
-     {path:"Owner",element: <Owner/>}
+      { path: "/User", element: <User /> },
+      { path: "/Admin", element: <Admin /> },
+     {path:"/Owner",element: <Owner/>}
     ],
   },
 ]);

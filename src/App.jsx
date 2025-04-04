@@ -5,6 +5,7 @@ import User from "./pages/User";
 
 
 import Admin from "./pages/Admin";
+import Owner from "./pages/owner";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "User", element: <User /> },
       { path: "Admin", element: <Admin /> },
-     
+     {path:"Owner",element: <Owner/>}
     ],
   },
 ]);
